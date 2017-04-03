@@ -62,9 +62,7 @@ def run():
 
         # Yes, I'm defaulting these on. So sue me.
         command.append("-ex")
-        command.append("break _start") # Break right at the begining
-        command.append("-ex")
-        command.append("run")
+        command.append("start")
         command.append("-ex")
         command.append("format-string-helper")
         command.append("-ex")
