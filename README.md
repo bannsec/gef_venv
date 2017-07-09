@@ -17,3 +17,10 @@ This installer creates a wrapper named `gef`. So it's as simple as activating yo
 $ workon myenv
 (myenv) $ gef ./a.out test
 ```
+# Common Errors
+## mprotect() failed: Cannot allocate memory
+This is because libdislocator creates a TON of malloc areas. Try updating `max_map_count` to be super high:
+
+```bash
+echo 128000 > /proc/sys/vm/max_map_count
+```
