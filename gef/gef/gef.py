@@ -65,8 +65,8 @@ def run():
         command.append("start")
         command.append("-ex")
         command.append("format-string-helper")
-        command.append("-ex")
-        command.append("heap-analysis-helper")
+        #command.append("-ex")
+        #command.append("heap-analysis-helper")
 
 
         # Tack on any extra args
