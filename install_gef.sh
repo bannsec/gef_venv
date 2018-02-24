@@ -99,7 +99,7 @@ echo -n "Installing libdislocator ... "
 cd $TMPDIR
 wget -q "http://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz"
 tar xf afl-latest.tgz
-cd afl-*
+cd `ls -d afl-*/`
 cd libdislocator
 
 # Try to make both versions
